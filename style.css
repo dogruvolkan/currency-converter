@@ -1,0 +1,204 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    background-image: linear-gradient(to bottom, #2598e0, #3880b5, #3f698b, #405364, #3b3d3f);
+}
+
+.kur{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 0 50px;
+   
+}
+
+.kur-container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;   
+    width: 100%;
+}
+.guncel-kur-card {
+    width: 40%;
+}
+.kur-card{
+    width: 40%;
+}
+.guncel-kur-card , .kur-card{
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    padding:40px 30px;
+    height: 520px;
+    background: #fff;
+    color:#181818;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 8px;
+}
+
+.guncel-kur-card h2 , .kur-card h2{
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+table{
+    width: 100%;
+    border-collapse: collapse;
+}
+
+thead th{
+    padding:10px 0;
+    border: 1px solid #ddd;
+}
+
+tbody td{
+    padding:8px;
+    border: 1px solid #ddd;
+    position: relative;
+}
+
+tr:nth-child(even){background-color: #f2f2f2;}
+
+tr:hover {background-color: #ddd;}
+
+table img{
+    width:25px;
+    height: 20px;    
+}
+
+table span{
+    position: absolute;
+    left:50px;
+}
+
+.kur-card  input{
+    width: 100%;
+    height: 40px;
+    margin:20px 0;
+    padding-left:15px;
+    border:1px solid #CFD2CF;
+    outline:none;
+    font-size: 17px;
+    border-radius: 6px;
+}
+
+
+.from-to-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 30px 0;
+}
+
+
+#from , #to{
+    width:100%;
+    height: 40px;
+    margin:20px 0;
+    outline:none;
+    font-size: 17px;
+    border:1px solid #CFD2CF;
+    border-radius: 6px;
+}
+
+.kur-card i{
+    margin:20px 10px 0 10px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.kur-card .sonuc{
+    margin:35px 0;
+    font-size: 30px;
+    text-align: center;
+   
+}
+
+.kur-card button{
+    width: 100%;
+    text-align: center;
+    padding:15px;
+    margin:15px 0 ;
+    cursor: pointer;
+    font-size: 18px;
+    border:1px solid #CFD2CF;
+    outline:none;
+    background-image: linear-gradient(to bottom, #2598e0, #3880b5, #3f698b, #405364, #3b3d3f);
+    color:#fff;
+    border-radius: 6px;
+}
+
+
+
+@media screen and (max-width:1200px){
+    .kur {
+        padding: 0 30px;
+    } 
+}
+
+@media screen and (max-width:992px){
+    .kur {
+        padding: 0 20px;
+    }
+    .kur-container{
+        justify-content: space-between;
+    }
+    .guncel-kur-card {
+        width: 50%;
+    }
+    .kur-card{
+        width: 45%;
+    }
+}
+
+@media screen and (max-width:768px){
+    .kur-container{
+       flex-direction: column;
+       padding: 40px;
+    }
+    .guncel-kur-card {
+        width: 100%;
+        margin-bottom: 40px;
+    }
+    .kur-card{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:600px){
+    .kur {
+        padding: 0 20px;
+        margin-bottom:30px;
+    }
+    .kur-container{
+       padding: 10px;
+    }
+    table span{
+        font-size: 15px;
+        left:40px;
+    }
+}
+
+@media screen and (max-width:414px){
+    .kur {
+        padding: 0 10px;
+        margin-bottom:30px;
+    }
+    .guncel-kur-card ,  .kur-card {
+        padding:30px 10px;
+    }
+    .kur-card .sonuc{
+        margin:35px 0;
+        font-size: 20px;
+        text-align: center;
+       
+    }
+   
+}
