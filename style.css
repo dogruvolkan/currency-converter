@@ -118,7 +118,7 @@ table span{
     margin:35px 0;
     font-size: 30px;
     text-align: center;
-   
+    word-wrap: break-word;
 }
 
 .kur-card button{
